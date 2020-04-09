@@ -189,7 +189,7 @@ public class TypeChecker implements Visitor {
     }else{
       currType = "nil";
     }
-    if(!currType.equals("nill") && !currType.equals(symbolTable.getInfo("return"))){
+    if(!currType.equals("nil") && !currType.equals(symbolTable.getInfo("return"))){
       String msg = "return does not match";
       error(msg, node.returnToken);
     } 

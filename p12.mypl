@@ -10,7 +10,7 @@ fun int fac(int n)
   end
 end
 
-var v := 30
+var v := 12
 
 print("fac(")
 print(itos(v))

@@ -344,9 +344,9 @@ public class Interpreter implements Visitor {
       List<Object> argVals = new ArrayList<>();
       List<Object> funcVals = (List<Object>)symbolTable.getInfo(funName);
       int currentEnvId = symbolTable.getEnvironmentId();
-      for(Expr argument : node.argList) 
+      for(Expr arg : node.argList) 
 	    {
-        argument.accept(this);
+        arg.accept(this);
         argVals.add(currVal);
       }
       symbolTable.setEnvironmentId((Integer)funcVals.get(0));
